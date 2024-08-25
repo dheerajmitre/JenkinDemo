@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('JenkinFiles') {
+            steps {
+                echo 'this is jenkin file'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test Success'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Successful'
+            }
+        }
+    }
+}
